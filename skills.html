@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <div class="home-skill py-5 mt-5 mb-5">
+        <div class="container ">
+            <div class="row </div>">
+                <div class="col-md-12 heading">
+                    <h2 class="text-primary fw-bold">My Skills</h2>
+                    <h3 class="text-light fw-bold">Expertise in Programming, Cybersecurity & AI</h3>
+                </div>
+    
+                <div class="col-md-6 wow fadeInLeft  ">
+                    <div class="progress-text text-white">HTML & CSS</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="--progress: 90%;" aria-label="HTML & CSS proficiency">90%</div>
+                    </div>
+    
+                    <div class="progress-text text-white">JavaScript</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="--progress: 80%;" aria-label="JavaScript proficiency">80%</div>
+                    </div>
+    
+                    <div class="progress-text text-white">Python</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="--progress: 85%;" aria-label="Python proficiency">85%</div>
+                    </div>
+    
+
+    
+                    <div class="progress-text text-white">Cybersecurity Basics</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="--progress: 70%;" aria-label="  Hacking ">70%</div>
+                    </div>
+    
+                    <div class="progress-text text-white">Networking</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="--progress: 75%;" aria-label="Networking proficiency">75%</div>
+                    </div>
+                </div>
+    
+                <div class="col-md-6 wow fadeInRight">
+                    <div class="progress-text text-white">AI Tools (e.g., ChatGPT, Hugging Face)</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="--progress: 85%;" aria-label="AI tools proficiency">85%</div>
+                    </div>
+    
+                    <div class="progress-text text-white">Problem-Solving & Debugging</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="--progress: 90%;" aria-label="Problem-solving proficiency">90%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <style>
+        
+        .home-skill{
+            background-image:   linear-gradient(#04208764,#bf00ff42) ,url(images/bg-skills.png);
+            width: 100%;
+            height: 100vh;
+            
+            
+            background-repeat:  no-repeat;
+            background-size: cover;
+            background-position: center center;
+            
+            background-attachment: fixed;
+            position: relative;
+        }
+    .progress {
+        position: relative;
+        height: 20px;
+        background-color: #e0e0e0;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    
+    .progress-bar {
+        height: 100%;
+        width: 0;
+        background: linear-gradient(90deg, #4CAF50, #2196F3, #FFC107);
+        border-radius: 10px;
+        animation: fillBar 2s ease-in-out forwards, colorShift 6s ease-in-out infinite;
+        position: relative;
+        background-size: 200% 200%; /* لخلق تأثير الانتقال التدريجي */
+    }
+    
+    .progress-bar::after {
+        content: attr(aria-label);
+        position: absolute;
+        right: 10px;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-weight: bold;
+    }
+    
+    /* تأثير الامتلاء */
+    @keyframes fillBar {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: var(--progress);
+        }
+    }
+    
+    /* تأثير تقلب الألوان بتدرج تدريجي */
+    @keyframes colorShift {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    
+    
+
+    </style>
+
+
+<div class="row">
+    <div class="col-lg-4 col-md-6 wow fadeInLeft">
+        <div class="item">
+            <div class="icon"><i class="fas fa-code"></i></div>
+            <h3>Front-End Development</h3>
+            <p>
+                Specialized in creating interactive and responsive user interface designs using HTML, CSS, and JavaScript, with a focus on performance optimization and user experience.
+            </p>
+            <div class="button">
+                <a href="service-detail.html" class="btn btn-primary">Read More</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 wow fadeInUp">
+        <div class="item">
+            <div class="icon"><i class="fas fa-laptop-code"></i></div>
+            <h3>Full-Stack Development</h3>
+            <p>
+                Designing and developing complete web applications, covering both front-end and back-end technologies such as Node.js, PHP, and database management.
+            </p>
+            <div class="button">
+                <a href="service-detail.html" class="btn btn-primary">Read More</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 wow fadeInRight">
+        <div class="item">
+            <div class="icon"><i class="fas fa-shield-alt"></i></div>
+            <h3>Penetration Testing</h3>
+            <p>
+                Advanced penetration testing services to identify and mitigate vulnerabilities in web applications, networks, and systems, ensuring enhanced security.
+            </p>
+            <div class="button">
+                <a href="service-detail.html" class="btn btn-primary">Read More</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 wow fadeInLeft">
+        <div class="item">
+            <div class="icon"><i class="fas fa-pencil-alt"></i></div>
+            <h3>Content Creation</h3>
+            <p>
+                Crafting engaging and SEO-optimized content for websites, blogs, and digital platforms to enhance brand visibility and user engagement.
+            </p>
+            <div class="button">
+                <a href="service-detail.html" class="btn btn-primary">Read More</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 wow fadeInUp">
+        <div class="item">
+            <div class="icon"><i class="far fa-lightbulb"></i></div>
+            <h3>Social Media Strategies</h3>
+            <p>
+                Developing and managing social media strategies to boost online presence and connect with the target audience effectively.
+            </p>
+            <div class="button">
+                <a href="service-detail.html" class="btn btn-primary">Read More</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 wow fadeInRight">
+        <div class="item">
+            <div class="icon"><i class="fas fa-search"></i></div>
+            <h3>SEO Optimization</h3>
+            <p>
+                Implementing cutting-edge search engine optimization techniques to improve website ranking, visibility, and organic traffic.
+            </p>
+            <div class="button">
+                <a href="service-detail.html" class="btn btn-primary">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

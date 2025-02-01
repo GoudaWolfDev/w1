@@ -1,0 +1,23 @@
+
+
+.card{
+    margin: 0 auto;
+    padding: 2rem;
+    width: 300px;
+    background-color: lightblue;
+    text-decoration: center;
+    border-radius: 10px;
+}
+
+.card::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: red;
+    top: 50% ;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 2px;
+}
